@@ -1,9 +1,8 @@
 
 /*
- *
+ * SVM
  * Primary file for the API
  * index.js
- *
  */
 
 //Dependencies
