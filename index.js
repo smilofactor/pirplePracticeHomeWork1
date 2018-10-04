@@ -16,6 +16,7 @@ var server = http.createServer(function(req,res) {
   //Get URL and parse it
   var parsedUrl = url.parse(req.url,true);
 
+
   //Get path
   var path = parsedUrl.pathname;
   var trimmedPath = path.replace(/^\/+|\/+$/g,'');
@@ -24,6 +25,10 @@ var server = http.createServer(function(req,res) {
   //Get the query string as an object
   var queryStringObject = parsedUrl.query;
   
+
+  //Get headers as an object
+  var headers = req.headers;
+
 
   //Get the HTTP method
   var method = req.method.toLowerCase();
@@ -34,8 +39,9 @@ var server = http.createServer(function(req,res) {
 
 
   //Log the request path
-  console.log('\nqueryStringObject is: ',queryStringObject);
-  console.log('\nRequest received on path: '+trimmedPath+ 
+  console.log('\nQueryStringObject is: ',queryStringObject,
+                '\nrequest received on path: '+trimmedPath+ 
+                '\nrequest received with these headers',headers,
                 '\nusing this method: '+method);
  
 
