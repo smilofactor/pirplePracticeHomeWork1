@@ -1,7 +1,8 @@
 # pirplePracticeHomeWork1
 
 This is required homework for pirple javascript course, located at:
-pirple.thinkific.com/courses/take/the-nodejs-master-class/texts/4342320-homework-assignment-1ddin section 3 after video 12.
+
+pirple.thinkific.com/courses/take/the-nodejs-master-class/texts/4342320-homework-assignment-1
 
 The Assignment:
 
