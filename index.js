@@ -74,8 +74,8 @@ var server = http.createServer(function(req,res) {
       var payLoadString = JSON.stringify(payload);
 
       //Return response
+      res.setHeader('Content-Type', 'application/json');
       res.writeHead(statusCode);
-
       res.end(payLoadString);
 
       //Log the requested path
