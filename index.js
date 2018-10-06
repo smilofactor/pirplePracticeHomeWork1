@@ -3,6 +3,7 @@
  * SVM
  * Primary file for the API
  * index.js
+ * Home Work 1
  */
 
 
@@ -117,6 +118,10 @@ handlers.sample = function(data,callback) {
   callback(406,{'name' : 'sample handler'});
 };
 
+handlers.hello = function(data,callback) {
+  callback(406,{'message' : 'Greetings you have found the hello path'});
+};
+
 
 //Not found handler
 handlers.notFound = function(data,callback) {
@@ -126,8 +131,8 @@ handlers.notFound = function(data,callback) {
 
 //Define a request router
 var router = {
-  'sample' : handlers.sample
-  
+  'sample' : handlers.sample,
+  'hello' : handlers.hello 
 };
 
 
